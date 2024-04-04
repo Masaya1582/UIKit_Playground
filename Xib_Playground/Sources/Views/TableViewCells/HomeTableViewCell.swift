@@ -20,5 +20,8 @@ final class HomeTableViewCell: UITableViewCell {
     // MARK: - Setup
     func configure() {
     }
-    
+
+//    func configure(with <#name#>: <#Type#>) {
+//    }
+
 }

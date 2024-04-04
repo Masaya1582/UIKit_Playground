@@ -21,4 +21,7 @@ final class HomeCollectionViewCell: UICollectionViewCell {
     func configure() {
     }
 
+//    func configure(with <#name#>: <#Type#>) {
+//    }
+
 }
