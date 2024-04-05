@@ -13,6 +13,7 @@ protocol HomeViewModelInputs: AnyObject {
 }
 
 protocol HomeViewModelOutputs: AnyObject {
+    // var items: Driver<[HomeViewModel.ListItem]> { get }
 }
 
 protocol HomeViewModelType: AnyObject {
@@ -27,6 +28,7 @@ final class HomeViewModel: HomeViewModelType, HomeViewModelInputs, HomeViewModel
 
     // MARK: - Input Sources
     // MARK: - Output Sources
+    // let items: Driver<[ListItem]>
 
     // MARK: - Properties
     private let disposeBag = DisposeBag()
