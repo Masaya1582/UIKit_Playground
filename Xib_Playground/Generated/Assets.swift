@@ -29,6 +29,7 @@ internal enum Asset {
     internal static let imgLeftHeadBack = ImageAsset(name: "img_left_head_back")
     internal static let imgRightHeadBack = ImageAsset(name: "img_right_head_back")
     internal static let imgWaterfall = ImageAsset(name: "img_waterfall")
+    internal static let imgYoshiCheck = ImageAsset(name: "img_yoshi_check")
     internal static let imgBurger = ImageAsset(name: "img_burger")
     internal static let imgNuggets = ImageAsset(name: "img_nuggets")
     internal static let imgPancakes = ImageAsset(name: "img_pancakes")
