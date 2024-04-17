@@ -11,7 +11,7 @@ import RxCocoa
 
 final class HomeViewController: UIViewController {
     // MARK: - Dependency
-    typealias Dependency = Void
+    typealias Dependency = HomeViewModelType
 
     // MARK: - Properties
 //    @IBOutlet private weak var tableView: UITableView! {
