@@ -10,10 +10,11 @@ import RxCocoa
 import Action
 
 protocol HomeViewModelInputs: AnyObject {
+    var load: PublishRelay<Void> { get }
 }
 
 protocol HomeViewModelOutputs: AnyObject {
-    // var items: Driver<[HomeViewModel.ListItem]> { get }
+    var isLoading: Driver<Bool> { get }
 }
 
 protocol HomeViewModelType: AnyObject {
@@ -27,23 +28,22 @@ final class HomeViewModel: HomeViewModelType, HomeViewModelInputs, HomeViewModel
     var outputs: HomeViewModelOutputs { return self }
 
     // MARK: - Input Sources
+    let load = PublishRelay<Void>()
     // MARK: - Output Sources
-    // let items: Driver<[ListItem]>
+    let isLoading: Driver<Bool>
 
     // MARK: - Properties
+    private let _isLoading = BehaviorRelay<Bool>(value: false)
     private let disposeBag = DisposeBag()
 
     // MARK: - Initialize
     init() {
+        self.isLoading = _isLoading.asDriver(onErrorDriveWith: .empty())
+        load.asObservable()
+            .withLatestFrom(_isLoading)
+            .map { !$0 }
+            .bind(to: _isLoading)
+            .disposed(by: disposeBag)
     }
 
 }
-
-// MARK: - Item
-//extension HomeViewModel {
-//    enum ListItem {
-//        case header
-//        case shop(Content)
-//        case footer
-//    }
-//}
