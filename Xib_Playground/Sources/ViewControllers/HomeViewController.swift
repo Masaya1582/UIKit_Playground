@@ -8,22 +8,15 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import ImageViewer_swift
 
 final class HomeViewController: UIViewController {
     // MARK: - Dependency
     typealias Dependency = HomeViewModelType
 
     // MARK: - Properties
-//    @IBOutlet private weak var tableView: UITableView! {
-//        didSet {
-//            tableView.registerCell(HomeTableViewCell.self)
-//        }
-//    }
-//    @IBOutlet private weak var collectionView: UICollectionView! {
-//        didSet {
-//            collectionView.registerCell(HomeCollectionViewCell.self)
-//        }
-//    }
+    @IBOutlet private weak var imageView: UIImageView!
+
     private let disposeBag = DisposeBag()
     private let viewModel: Dependency
 
@@ -42,6 +35,13 @@ final class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         bind(to: viewModel)
+        let theme = ImageViewerTheme.dark
+        let options: [ImageViewerOption] = [
+            .theme(theme),
+            .closeIcon(Asset.Assets.imgLeftHeadBack.image),
+            .contentMode(.scaleAspectFill)
+        ]
+        imageView.setupImageViewer(options: options)
     }
 
 }

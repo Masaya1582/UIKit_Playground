@@ -11,5 +11,6 @@ target 'Xib_Playground' do
     pod 'RxSwift'
     pod 'RxCocoa'
     pod 'RxDataSources', '~> 5.0'
+    pod 'ImageViewer.swift', '~> 3.0'
   
 end

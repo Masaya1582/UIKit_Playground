@@ -3,6 +3,7 @@ PODS:
     - RxCocoa (~> 6.0)
     - RxSwift (~> 6.0)
   - Differentiator (5.0.0)
+  - ImageViewer.swift (3.3.8)
   - RxCocoa (6.5.0):
     - RxRelay (= 6.5.0)
     - RxSwift (= 6.5.0)
@@ -17,6 +18,7 @@ PODS:
 
 DEPENDENCIES:
   - Action
+  - ImageViewer.swift (~> 3.0)
   - RxCocoa
   - RxDataSources (~> 5.0)
   - RxSwift
@@ -26,6 +28,7 @@ SPEC REPOS:
   trunk:
     - Action
     - Differentiator
+    - ImageViewer.swift
     - RxCocoa
     - RxDataSources
     - RxRelay
@@ -35,12 +38,13 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Action: 47f1825511907b4fcd79dd7a7db9526c20f78018
   Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
+  ImageViewer.swift: 284cd8127d31af8e5938674fb9f8e695a4cdf6c6
   RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
   RxDataSources: aa47cc1ed6c500fa0dfecac5c979b723542d79cf
   RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
   RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
   SwiftGen: 1366a7f71aeef49954ca5a63ba4bef6b0f24138c
 
-PODFILE CHECKSUM: eff29b88b7f0af089baf24317b9349133d25265e
+PODFILE CHECKSUM: ce7e096ba46ab507bbf89cbc0033418a83470c9f
 
-COCOAPODS: 1.13.0
+COCOAPODS: 1.15.2
