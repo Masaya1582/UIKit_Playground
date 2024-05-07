@@ -20,3 +20,11 @@ final class HomeModel {
         self.isHuman = isHuman
     }
 }
+
+public enum PokemonType: String {
+    case electric = "Electric"
+    case fire = "Fire"
+    case water = "Water"
+    case grass = "Grass"
+    case normal = "Normal"
+}
