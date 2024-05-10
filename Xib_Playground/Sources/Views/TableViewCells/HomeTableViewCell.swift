@@ -2,7 +2,7 @@
 //  HomeTableViewCell.swift
 //  Xib_Playground
 //
-//  Created by MasayaNakakuki on 2023/06/29.
+//  Created by 中久木 雅哉(Nakakuki Masaya) on 2024/05/10.
 //
 
 import UIKit
@@ -12,16 +12,21 @@ import RxCocoa
 final class HomeTableViewCell: UITableViewCell {
     // MARK: - Properties
 
+    private var disposeBag = DisposeBag()
+
     // MARK: - Initialize
     override func prepareForReuse() {
         super.prepareForReuse()
+        disposeBag = DisposeBag()
     }
 
     // MARK: - Setup
     func configure() {
     }
 
-//    func configure(with <#name#>: <#Type#>) {
-//    }
+}
 
+private extension HomeTableViewCell {
+    func bind() {
+    }
 }
