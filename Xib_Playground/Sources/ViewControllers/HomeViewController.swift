@@ -24,13 +24,13 @@ final class HomeViewController: UIViewController {
 //            collectionView.registerCell(HomeCollectionViewCell.self)
 //        }
 //    }
+    private lazy var viewModel: HomeViewModelType = { fatalError("Use (dependency: ) at initialize controller") }()
     private let disposeBag = DisposeBag()
-    private let viewModel: Dependency
 
     // MARK: - Initialize
     init(dependency: Dependency) {
-        self.viewModel = dependency
         super.init(nibName: Self.className, bundle: Self.bundle)
+        self.viewModel = dependency
     }
 
     @available(*, unavailable)

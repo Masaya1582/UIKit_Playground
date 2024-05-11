@@ -7,17 +7,17 @@
 
 import Foundation
 
-final class HomeModel {
+struct HomeModel {
     var name: String
     var age: Int
     var height: Double
     var isHuman: Bool
 
-    init(name: String, age: Int, height: Double, isHuman: Bool) {
-        self.name = name
-        self.age = age
-        self.height = height
-        self.isHuman = isHuman
+    private enum CodingKeys: String, CodingKey {
+        case name
+        case age
+        case height
+        case isHuman = "is_human"
     }
 }
 
