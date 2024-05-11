@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="Xib_Playground" customModuleProvider="target">
             <connections>
+                <outlet property="countLabel" destination="7m6-Qe-9O9" id="BAL-tb-1Ff"/>
+                <outlet property="resetButton" destination="PuA-fA-pTD" id="8Xi-m7-gDD"/>
+                <outlet property="startStopButton" destination="d1A-Pd-jMu" id="GET-1v-5WP"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -17,9 +22,85 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Count" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7m6-Qe-9O9">
+                    <rect key="frame" x="24" y="219" width="345" height="38.333333333333314"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                    <color key="textColor" name="gray1"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="wR3-BJ-307">
+                    <rect key="frame" x="48" y="457.33333333333326" width="297" height="120"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1A-Pd-jMu" customClass="DesignableButton" customModule="Xib_Playground" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="297" height="48"/>
+                            <color key="backgroundColor" systemColor="systemGreenColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="Mzo-mF-vQP"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Start"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="24"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PuA-fA-pTD" customClass="DesignableButton" customModule="Xib_Playground" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="72.000000000000057" width="297" height="48"/>
+                            <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="xTN-9l-cm4"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Reset"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="24"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="d1A-Pd-jMu" secondAttribute="trailing" id="0Tg-Qr-Vuh"/>
+                        <constraint firstItem="d1A-Pd-jMu" firstAttribute="leading" secondItem="wR3-BJ-307" secondAttribute="leading" id="9YW-iB-mbe"/>
+                        <constraint firstAttribute="trailing" secondItem="PuA-fA-pTD" secondAttribute="trailing" id="L22-Im-VWg"/>
+                        <constraint firstItem="PuA-fA-pTD" firstAttribute="leading" secondItem="wR3-BJ-307" secondAttribute="leading" id="xvo-bq-AHP"/>
+                    </constraints>
+                </stackView>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="wR3-BJ-307" firstAttribute="top" secondItem="7m6-Qe-9O9" secondAttribute="bottom" constant="200" id="1a7-w2-ueS"/>
+                <constraint firstItem="7m6-Qe-9O9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="MTC-HB-Fk1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wR3-BJ-307" secondAttribute="trailing" constant="48" id="Q3g-5g-GPT"/>
+                <constraint firstItem="wR3-BJ-307" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="48" id="iAh-T8-h7x"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7m6-Qe-9O9" secondAttribute="trailing" constant="24" id="vR1-r8-aav"/>
+                <constraint firstItem="7m6-Qe-9O9" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="160" id="z6s-C0-CKL"/>
+            </constraints>
             <point key="canvasLocation" x="132" y="-11"/>
         </view>
     </objects>
+    <designables>
+        <designable name="PuA-fA-pTD">
+            <size key="intrinsicContentSize" width="54" height="36"/>
+        </designable>
+        <designable name="d1A-Pd-jMu">
+            <size key="intrinsicContentSize" width="48" height="36"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="gray1">
+            <color red="0.13699999451637268" green="0.13699999451637268" blue="0.13699999451637268" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
