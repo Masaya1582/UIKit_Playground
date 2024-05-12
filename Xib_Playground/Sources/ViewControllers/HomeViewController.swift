@@ -58,7 +58,7 @@ private extension HomeViewController {
             .drive(countLabel.rx.text)
             .disposed(by: disposeBag)
 
-        viewModel.outputs.shouldHideResetButton
+        viewModel.outputs.isResetButtonHidden
             .drive { [weak self] shouldHideResetButton in
                 self?.resetButton.isHidden = shouldHideResetButton
                 self?.startStopButton.setTitle(shouldHideResetButton ? "Start" : "Stop", for: .normal)
