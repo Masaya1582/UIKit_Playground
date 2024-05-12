@@ -43,21 +43,25 @@ final class HomeViewController: UIViewController {
 // MARK: - Bind
 private extension HomeViewController {
     func bind(to viewModel: Dependency) {
+        // 開始 & ストップ
         startStopButton.rx.tap.asSignal()
             .emit(onNext: { _ in
                 viewModel.inputs.manageCount.accept(())
             })
             .disposed(by: disposeBag)
 
+        // リセット
         resetButton.rx.tap.asSignal()
             .emit(to: viewModel.inputs.resetCount)
             .disposed(by: disposeBag)
 
+        // タイマー表示
         viewModel.outputs.count
             .map { String($0) }
             .drive(countLabel.rx.text)
             .disposed(by: disposeBag)
 
+        // リセットボタン表示
         viewModel.outputs.isResetButtonHidden
             .drive { [weak self] shouldHideResetButton in
                 self?.resetButton.isHidden = shouldHideResetButton
@@ -65,6 +69,7 @@ private extension HomeViewController {
             }
             .disposed(by: disposeBag)
 
+        // タイマー稼働状態
         viewModel.outputs.isTimerRunning
             .drive { [weak self] isTimerRunning in
                 self?.startStopButton.setTitle(isTimerRunning ? "Stop" : "Start", for: .normal)
