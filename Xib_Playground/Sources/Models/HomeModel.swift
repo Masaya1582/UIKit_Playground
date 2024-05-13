@@ -12,12 +12,14 @@ struct HomeModel {
     var age: Int
     var height: Double
     var isHuman: Bool
+    var type: PokemonType?
 
     private enum CodingKeys: String, CodingKey {
         case name
         case age
         case height
         case isHuman = "is_human"
+        case type
     }
 }
 
