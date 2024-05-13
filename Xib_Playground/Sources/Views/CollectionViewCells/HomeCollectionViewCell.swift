@@ -22,6 +22,7 @@ final class HomeCollectionViewCell: UICollectionViewCell {
 
     // MARK: - Setup
     func configure() {
+        bind()
     }
 
 }
