@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct HomeModel {
+struct DefaultModel {
     var name: String
     var age: Int
     var height: Double

@@ -31,6 +31,7 @@ final class HomeViewModel: HomeViewModelType, HomeViewModelInputs, HomeViewModel
     // let items: Driver<[ListItem]>
 
     // MARK: - Properties
+    // private let loadAction: Action<Void, DefaultModel>
     private let disposeBag = DisposeBag()
 
     // MARK: - Initialize
