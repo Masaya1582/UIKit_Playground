@@ -29,5 +29,10 @@ final class HomeTableViewCell: UITableViewCell {
 
 private extension HomeTableViewCell {
     func bind() {
+//        <#Button#>.rx.tap.asSignal()
+//            .emit(onNext: { [weak self] in
+//                <#Actions#>
+//            })
+//            .disposed(by: disposeBag)
     }
 }
