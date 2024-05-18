@@ -9,9 +9,14 @@ import UIKit
 import RxSwift
 import RxCocoa
 
+protocol HomeCollectionViewCellDelegate: AnyObject {
+    func homeCollectionViewCellDidTapButton()
+}
+
 final class HomeCollectionViewCell: UICollectionViewCell {
     // MARK: - Properties
 
+    weak var delegate: HomeCollectionViewCellDelegate?
     private var disposeBag = DisposeBag()
 
     // MARK: - Initialize
