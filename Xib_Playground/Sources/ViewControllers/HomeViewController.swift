@@ -66,16 +66,17 @@ private extension HomeViewController {
 //            .disposed(by: disposeBag)
 //
 //        viewModel.outputs.<#Property#>
-//            .drive(<#tableView or collectionView#>.rx.items) { <#tableView or collectionView#>, row, element in
+//            .drive(<#tableView or collectionView#>.rx.items) { [weak self] <#tableView or collectionView#>, row, element in
 //                let indexPath = IndexPath(row: row, section: 0)
 //               let cell = <#tableView or collectionView#>.dequeueReusableCell(<#TableViewCell or CollectionViewCell#>.self, for: indexPath)
+//                cell.delegate = self
 //                cell.configure(with: element)
 //                return cell
 //            }
 //            .disposed(by: disposeBag)
 //
 //        viewModel.outputs.listItem
-//            .drive(<#tableView or collectionView#>.rx.items) { <#tableView or collectionView#>, row, element in
+//            .drive(<#tableView or collectionView#>.rx.items) { [weak self] <#tableView or collectionView#>, row, element in
 //                switch element {
 //                case .<#enum Item1#>:
 //                    guard let cell = <#tableView or collectionView#>.dequeueReusableCell(withIdentifier: "<#Identifier#>", for: [0, row]) as? <#TableView or CollectionView#> else {
@@ -86,6 +87,7 @@ private extension HomeViewController {
 //                    guard let cell = <#tableView or collectionView#>.dequeueReusableCell(withIdentifier: "<#Identifier#>", for: [0, row]) as? <#TableView or CollectionView#> else {
 //                        return UITableViewCell()
 //                    }
+//                    cell.delegate = self
 //                    cell.configure(with: element)
 //                    return cell
 //                case .<#enum Item3#>:
