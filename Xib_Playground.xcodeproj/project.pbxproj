@@ -33,10 +33,22 @@
 		4011E8EC2A4D9D8D003F06BF /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4011E8EB2A4D9D8D003F06BF /* HomeViewModel.swift */; };
 		4011E8F22A4D9E05003F06BF /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4011E8F12A4D9E05003F06BF /* HomeModel.swift */; };
 		4011E8F42A4D9ED9003F06BF /* Quicksand-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4011E8F32A4D9ED9003F06BF /* Quicksand-VariableFont_wght.ttf */; };
+		40BA840D2C1D098A00F52408 /* CalculatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BA840C2C1D098A00F52408 /* CalculatorTest.swift */; };
+		40BA84142C1D09E200F52408 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BA84132C1D09E200F52408 /* Calculator.swift */; };
 		40D3B0132A56B2CB00E9A002 /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D3B0122A56B2CB00E9A002 /* NSObjectExtension.swift */; };
 		40D3B0162A56B3E400E9A002 /* ViewControllerInjectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D3B0152A56B3E400E9A002 /* ViewControllerInjectable.swift */; };
 		844A2A7CC692AB7AE5144D68 /* Pods_Xib_Playground.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CD0A8EB52597155F7D85EC8 /* Pods_Xib_Playground.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		40BA840E2C1D098A00F52408 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4011E8B62A4D9B6F003F06BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4011E8BD2A4D9B6F003F06BF;
+			remoteInfo = Xib_Playground;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1E3E3D502A67D6E500DB681F /* DesignableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
@@ -67,6 +79,9 @@
 		4011E8EB2A4D9D8D003F06BF /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		4011E8F12A4D9E05003F06BF /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		4011E8F32A4D9ED9003F06BF /* Quicksand-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		40BA840A2C1D098A00F52408 /* Xib_PlaygroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Xib_PlaygroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		40BA840C2C1D098A00F52408 /* CalculatorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorTest.swift; sourceTree = "<group>"; };
+		40BA84132C1D09E200F52408 /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 		40D3B0122A56B2CB00E9A002 /* NSObjectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
 		40D3B0152A56B3E400E9A002 /* ViewControllerInjectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerInjectable.swift; sourceTree = "<group>"; };
 		6CD0A8EB52597155F7D85EC8 /* Pods_Xib_Playground.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Xib_Playground.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +95,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				844A2A7CC692AB7AE5144D68 /* Pods_Xib_Playground.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40BA84072C1D098A00F52408 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				4011E8C02A4D9B6F003F06BF /* Xib_Playground */,
+				40BA840B2C1D098A00F52408 /* Xib_PlaygroundTests */,
 				4011E8BF2A4D9B6F003F06BF /* Products */,
 				1A300EBE5DE20C68DDB3A5A5 /* Pods */,
 				B49943C8182FF3B44B6BC674 /* Frameworks */,
@@ -140,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				4011E8BE2A4D9B6F003F06BF /* Xib_Playground.app */,
+				40BA840A2C1D098A00F52408 /* Xib_PlaygroundTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -231,8 +255,17 @@
 			isa = PBXGroup;
 			children = (
 				4011E8F12A4D9E05003F06BF /* HomeModel.swift */,
+				40BA84132C1D09E200F52408 /* Calculator.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		40BA840B2C1D098A00F52408 /* Xib_PlaygroundTests */ = {
+			isa = PBXGroup;
+			children = (
+				40BA840C2C1D098A00F52408 /* CalculatorTest.swift */,
+			);
+			path = Xib_PlaygroundTests;
 			sourceTree = "<group>";
 		};
 		40D3B0112A56B2BC00E9A002 /* Extensions */ = {
@@ -284,6 +317,24 @@
 			productReference = 4011E8BE2A4D9B6F003F06BF /* Xib_Playground.app */;
 			productType = "com.apple.product-type.application";
 		};
+		40BA84092C1D098A00F52408 /* Xib_PlaygroundTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40BA84122C1D098A00F52408 /* Build configuration list for PBXNativeTarget "Xib_PlaygroundTests" */;
+			buildPhases = (
+				40BA84062C1D098A00F52408 /* Sources */,
+				40BA84072C1D098A00F52408 /* Frameworks */,
+				40BA84082C1D098A00F52408 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				40BA840F2C1D098A00F52408 /* PBXTargetDependency */,
+			);
+			name = Xib_PlaygroundTests;
+			productName = Xib_PlaygroundTests;
+			productReference = 40BA840A2C1D098A00F52408 /* Xib_PlaygroundTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -291,11 +342,15 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1420;
+				LastSwiftUpdateCheck = 1530;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					4011E8BD2A4D9B6F003F06BF = {
 						CreatedOnToolsVersion = 14.2;
+					};
+					40BA84092C1D098A00F52408 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 4011E8BD2A4D9B6F003F06BF;
 					};
 				};
 			};
@@ -313,6 +368,7 @@
 			projectRoot = "";
 			targets = (
 				4011E8BD2A4D9B6F003F06BF /* Xib_Playground */,
+				40BA84092C1D098A00F52408 /* Xib_PlaygroundTests */,
 			);
 		};
 /* End PBXProject section */
@@ -330,6 +386,13 @@
 				4011E8CB2A4D9B70003F06BF /* Assets.xcassets in Resources */,
 				4011E8D82A4D9B81003F06BF /* HomeViewController.xib in Resources */,
 				4011E8F42A4D9ED9003F06BF /* Quicksand-VariableFont_wght.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40BA84082C1D098A00F52408 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +467,7 @@
 			files = (
 				1EC0E5332AB2A968003DA972 /* DesignableImageView.swift in Sources */,
 				4011E8C22A4D9B6F003F06BF /* AppDelegate.swift in Sources */,
+				40BA84142C1D09E200F52408 /* Calculator.swift in Sources */,
 				40D3B0132A56B2CB00E9A002 /* NSObjectExtension.swift in Sources */,
 				4011E8F22A4D9E05003F06BF /* HomeModel.swift in Sources */,
 				1EC5A8462BA69465001455DC /* UITableViewExtension.swift in Sources */,
@@ -425,7 +489,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		40BA84062C1D098A00F52408 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40BA840D2C1D098A00F52408 /* CalculatorTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		40BA840F2C1D098A00F52408 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4011E8BD2A4D9B6F003F06BF /* Xib_Playground */;
+			targetProxy = 40BA840E2C1D098A00F52408 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4011E8CC2A4D9B70003F06BF /* LaunchScreen.storyboard */ = {
@@ -623,6 +703,61 @@
 			};
 			name = Release;
 		};
+		40BA84102C1D098A00F52408 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L6Q3MJXV23;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.masa4y44-.masaya.nakakuki.Xib-PlaygroundTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Xib_Playground.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Xib_Playground";
+			};
+			name = Debug;
+		};
+		40BA84112C1D098A00F52408 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L6Q3MJXV23;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.masa4y44-.masaya.nakakuki.Xib-PlaygroundTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Xib_Playground.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Xib_Playground";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -640,6 +775,15 @@
 			buildConfigurations = (
 				4011E8D32A4D9B70003F06BF /* Debug */,
 				4011E8D42A4D9B70003F06BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40BA84122C1D098A00F52408 /* Build configuration list for PBXNativeTarget "Xib_PlaygroundTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40BA84102C1D098A00F52408 /* Debug */,
+				40BA84112C1D098A00F52408 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
