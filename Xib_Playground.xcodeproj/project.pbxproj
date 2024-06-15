@@ -35,6 +35,8 @@
 		4011E8F42A4D9ED9003F06BF /* Quicksand-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4011E8F32A4D9ED9003F06BF /* Quicksand-VariableFont_wght.ttf */; };
 		40BA840D2C1D098A00F52408 /* CalculatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BA840C2C1D098A00F52408 /* CalculatorTest.swift */; };
 		40BA84142C1D09E200F52408 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BA84132C1D09E200F52408 /* Calculator.swift */; };
+		40BA84162C1E5EDF00F52408 /* Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BA84152C1E5EDF00F52408 /* Temperature.swift */; };
+		40BA84182C1E5F5D00F52408 /* TemperatureTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BA84172C1E5F5D00F52408 /* TemperatureTest.swift */; };
 		40D3B0132A56B2CB00E9A002 /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D3B0122A56B2CB00E9A002 /* NSObjectExtension.swift */; };
 		40D3B0162A56B3E400E9A002 /* ViewControllerInjectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D3B0152A56B3E400E9A002 /* ViewControllerInjectable.swift */; };
 		844A2A7CC692AB7AE5144D68 /* Pods_Xib_Playground.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CD0A8EB52597155F7D85EC8 /* Pods_Xib_Playground.framework */; };
@@ -82,6 +84,8 @@
 		40BA840A2C1D098A00F52408 /* Xib_PlaygroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Xib_PlaygroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		40BA840C2C1D098A00F52408 /* CalculatorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorTest.swift; sourceTree = "<group>"; };
 		40BA84132C1D09E200F52408 /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
+		40BA84152C1E5EDF00F52408 /* Temperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temperature.swift; sourceTree = "<group>"; };
+		40BA84172C1E5F5D00F52408 /* TemperatureTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureTest.swift; sourceTree = "<group>"; };
 		40D3B0122A56B2CB00E9A002 /* NSObjectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
 		40D3B0152A56B3E400E9A002 /* ViewControllerInjectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerInjectable.swift; sourceTree = "<group>"; };
 		6CD0A8EB52597155F7D85EC8 /* Pods_Xib_Playground.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Xib_Playground.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -256,6 +260,7 @@
 			children = (
 				4011E8F12A4D9E05003F06BF /* HomeModel.swift */,
 				40BA84132C1D09E200F52408 /* Calculator.swift */,
+				40BA84152C1E5EDF00F52408 /* Temperature.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -264,6 +269,7 @@
 			isa = PBXGroup;
 			children = (
 				40BA840C2C1D098A00F52408 /* CalculatorTest.swift */,
+				40BA84172C1E5F5D00F52408 /* TemperatureTest.swift */,
 			);
 			path = Xib_PlaygroundTests;
 			sourceTree = "<group>";
@@ -471,6 +477,7 @@
 				40D3B0132A56B2CB00E9A002 /* NSObjectExtension.swift in Sources */,
 				4011E8F22A4D9E05003F06BF /* HomeModel.swift in Sources */,
 				1EC5A8462BA69465001455DC /* UITableViewExtension.swift in Sources */,
+				40BA84162C1E5EDF00F52408 /* Temperature.swift in Sources */,
 				1EC0E5312AB2A968003DA972 /* DesignableTextField.swift in Sources */,
 				1E6CD0192BEE0AD00080B3FB /* HomeTableViewCell.swift in Sources */,
 				1E514EDE2AAEDF2400C9CB9A /* DesignableView.swift in Sources */,
@@ -493,6 +500,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40BA84182C1E5F5D00F52408 /* TemperatureTest.swift in Sources */,
 				40BA840D2C1D098A00F52408 /* CalculatorTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
