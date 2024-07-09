@@ -6,8 +6,10 @@
 //
 
 import UIKit
+import CoreLocation
 
 final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
+    private let locationManager = CLLocationManager()
 
     var window: UIWindow?
 
@@ -21,6 +23,7 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //        window?.rootViewController = rootViewController
 
         // NavigationControllerを使用しない場合
+        locationManager.requestAlwaysAuthorization()
         window = UIWindow(windowScene: scene as! UIWindowScene)
         window?.makeKeyAndVisible()
         let viewModel = HomeViewModel()
