@@ -6,14 +6,17 @@
 //
 
 import UIKit
+import CoreLocation
 
 final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
+    private let locationManager = CLLocationManager()
 
     var window: UIWindow?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // guard let _ = (scene as? UIWindowScene) else { return }
         // NavigationControllerを使用する場合 
+//        locationManager.requestAlwaysAuthorization()
 //        window = UIWindow(windowScene: scene as! UIWindowScene)
 //        window?.makeKeyAndVisible()
 //        let <#名前#>ViewController = <#ファイル名#>()
@@ -21,6 +24,7 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //        window?.rootViewController = rootViewController
 
         // NavigationControllerを使用しない場合
+        locationManager.requestAlwaysAuthorization()
         window = UIWindow(windowScene: scene as! UIWindowScene)
         window?.makeKeyAndVisible()
         let viewModel = HomeViewModel()
