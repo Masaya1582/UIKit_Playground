@@ -5,15 +5,17 @@
 //  Created by MasayaNakakuki on 2023/06/29.
 //
 
-import UIKit
-import RxSwift
 import RxCocoa
+import RxSwift
+import UIKit
 
 final class HomeViewController: UIViewController {
     // MARK: - Dependency
+
     typealias Dependency = HomeViewModelType
 
     // MARK: - Properties
+
 //    @IBOutlet private weak var tableView: UITableView! {
 //        didSet {
 //            tableView.registerCell(HomeTableViewCell.self)
@@ -28,28 +30,30 @@ final class HomeViewController: UIViewController {
     private let disposeBag = DisposeBag()
 
     // MARK: - Initialize
+
     init(dependency: Dependency) {
         super.init(nibName: Self.className, bundle: Self.bundle)
-        self.viewModel = dependency
+        viewModel = dependency
     }
 
     @available(*, unavailable)
-    required init?(coder: NSCoder) {
+    required init?(coder _: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
     // MARK: - View Life Cycle
+
     override func viewDidLoad() {
         super.viewDidLoad()
         print("Hello Japan")
         bind(to: viewModel)
     }
-
 }
 
 // MARK: - Bind
+
 private extension HomeViewController {
-    func bind(to viewModel: Dependency) {
+    func bind(to _: Dependency) {
 //        <#Button#>.rx.tap.asSignal()
 //            .emit(onNext: { [weak self] in
 //                <#Actions#>
@@ -103,4 +107,5 @@ private extension HomeViewController {
 }
 
 // MARK: - ViewControllerInjectable
+
 extension HomeViewController: ViewControllerInjectable {}

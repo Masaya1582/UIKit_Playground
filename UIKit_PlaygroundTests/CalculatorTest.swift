@@ -1,12 +1,12 @@
 //
-//  UIKit_PlaygroundTests.swift
+//  CalculatorTest.swift
 //  UIKit_Playground
 //
 //  Created by MasayaNakakuki on 2024/06/15.
 //
 
-import XCTest
 @testable import UIKit_Playground
+import XCTest
 
 class CalculatorTests: XCTestCase {
     var calculator: Calculator!
@@ -45,7 +45,7 @@ class CalculatorTests: XCTestCase {
 }
 
 extension XCTestCase {
-    func XCTAssertFatalError(expectedMessage: String? = nil, file: StaticString = #file, line: UInt = #line, _ block: () throws -> Void) {
+    func XCTAssertFatalError(expectedMessage: String? = nil, file: StaticString = #file, line: UInt = #line, _: () throws -> Void) {
         var assertionMessage = "No fatal error thrown"
         var assertion = false
         if let message = expectedMessage {

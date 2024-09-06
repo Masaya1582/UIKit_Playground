@@ -5,9 +5,9 @@
 //  Created by 中久木 雅哉(Nakakuki Masaya) on 2024/05/10.
 //
 
-import UIKit
-import RxSwift
 import RxCocoa
+import RxSwift
+import UIKit
 
 protocol HomeCollectionViewCellDelegate: AnyObject {
     func homeCollectionViewCellDidTapButton()
@@ -20,16 +20,17 @@ final class HomeCollectionViewCell: UICollectionViewCell {
     private var disposeBag = DisposeBag()
 
     // MARK: - Initialize
+
     override func prepareForReuse() {
         super.prepareForReuse()
         disposeBag = DisposeBag()
     }
 
     // MARK: - Setup
+
     func configure() {
         bind()
     }
-
 }
 
 private extension HomeCollectionViewCell {

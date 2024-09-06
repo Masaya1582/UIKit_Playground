@@ -1,5 +1,5 @@
 //
-//  UICollectionViewExtension.swift.swift
+//  UICollectionViewExtension.swift
 //  UIKit_Playground
 //
 //  Created by 中久木 雅哉(Nakakuki Masaya) on 2024/03/17.
@@ -19,7 +19,7 @@ extension UICollectionView {
     }
 
     func dequeueReusableSupplementaryView<T: UICollectionReusableView>(_: T.Type, ofKind kind: String, for indexPath: IndexPath) -> T {
-        return dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: T.className, for: indexPath)  as! T
+        return dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: T.className, for: indexPath) as! T
     }
     // swiftlint:enable force_cast
 }

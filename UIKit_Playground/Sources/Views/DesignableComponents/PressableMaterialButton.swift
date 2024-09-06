@@ -1,5 +1,5 @@
 //
-//  PressAnimationButton.swift
+//  PressableMaterialButton.swift
 //  UIKit_Playground
 //
 //  Created by MasayaNakakuki on 2023/06/29.
@@ -21,10 +21,11 @@ final class PressAnimationButton: UIButton {
     }
 
     // MARK: - Configure UI
+
     private func configureUI() {
-        self.layer.cornerRadius = self.frame.height / 2
-        originalBackgroundColor = self.backgroundColor
-        self.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
+        layer.cornerRadius = frame.height / 2
+        originalBackgroundColor = backgroundColor
+        addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
     }
 
     @objc private func buttonTapped() {

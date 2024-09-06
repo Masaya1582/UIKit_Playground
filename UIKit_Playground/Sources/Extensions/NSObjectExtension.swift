@@ -8,6 +8,7 @@
 import Foundation
 
 // MARK: - Class Name
+
 extension NSObject {
     static var className: String {
         return NSStringFromClass(self).components(separatedBy: ".").last!
@@ -19,8 +20,8 @@ extension NSObject {
 }
 
 // MARK: - Bundle
-extension NSObject {
 
+extension NSObject {
     static var bundle: Bundle {
         return .init(for: self.self)
     }
