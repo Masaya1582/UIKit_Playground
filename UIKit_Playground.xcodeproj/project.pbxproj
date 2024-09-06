@@ -24,6 +24,7 @@
 		1EC0E5332AB2A968003DA972 /* DesignableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC0E5302AB2A968003DA972 /* DesignableImageView.swift */; };
 		1EC5A8462BA69465001455DC /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC5A8452BA69465001455DC /* UITableViewExtension.swift */; };
 		1EC5A8482BA6958F001455DC /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC5A8472BA6958F001455DC /* UICollectionViewExtension.swift */; };
+		1EE5E4E22C8AD93200422E13 /* SwiftFormat in Frameworks */ = {isa = PBXBuildFile; productRef = 1EE5E4E12C8AD93200422E13 /* SwiftFormat */; };
 		1EF7E6302ADE49ED0032015B /* PressableMaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF7E62F2ADE49ED0032015B /* PressableMaterialButton.swift */; };
 		4011E8C22A4D9B6F003F06BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4011E8C12A4D9B6F003F06BF /* AppDelegate.swift */; };
 		4011E8C42A4D9B6F003F06BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4011E8C32A4D9B6F003F06BF /* SceneDelegate.swift */; };
@@ -100,6 +101,7 @@
 				1E83D5D92C8AD15600D2AC3C /* RxBlocking-Dynamic in Frameworks */,
 				1E83D5DD2C8AD15600D2AC3C /* RxCocoa-Dynamic in Frameworks */,
 				1E83D5D52C8AD14300D2AC3C /* Action in Frameworks */,
+				1EE5E4E22C8AD93200422E13 /* SwiftFormat in Frameworks */,
 				1E83D5DB2C8AD15600D2AC3C /* RxCocoa in Frameworks */,
 				1E83D5D72C8AD15600D2AC3C /* RxBlocking in Frameworks */,
 			);
@@ -297,6 +299,7 @@
 				1E83D5DA2C8AD15600D2AC3C /* RxCocoa */,
 				1E83D5DC2C8AD15600D2AC3C /* RxCocoa-Dynamic */,
 				1E83D5DE2C8AD15600D2AC3C /* RxRelay */,
+				1EE5E4E12C8AD93200422E13 /* SwiftFormat */,
 			);
 			productName = Xib_Playground;
 			productReference = 1EE5E4DE2C8AD3E300422E13 /* UIKit_Playground.app */;
@@ -352,6 +355,7 @@
 				1E83D5D12C8AD05E00D2AC3C /* XCRemoteSwiftPackageReference "RxSwift" */,
 				1E83D5D22C8AD07C00D2AC3C /* XCRemoteSwiftPackageReference "SwiftGen" */,
 				1E83D5D32C8AD08900D2AC3C /* XCRemoteSwiftPackageReference "Action" */,
+				1EE5E4E02C8AD93200422E13 /* XCRemoteSwiftPackageReference "SwiftFormat" */,
 			);
 			productRefGroup = 4011E8B52A4D9B6F003F06BF;
 			projectDirPath = "";
@@ -768,6 +772,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		1EE5E4E02C8AD93200422E13 /* XCRemoteSwiftPackageReference "SwiftFormat" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nicklockwood/SwiftFormat";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.54.3;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -795,6 +807,11 @@
 		1E83D5DE2C8AD15600D2AC3C /* RxRelay */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = RxRelay;
+		};
+		1EE5E4E12C8AD93200422E13 /* SwiftFormat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1EE5E4E02C8AD93200422E13 /* XCRemoteSwiftPackageReference "SwiftFormat" */;
+			productName = SwiftFormat;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
