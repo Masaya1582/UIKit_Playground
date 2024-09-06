@@ -13,6 +13,12 @@
 		1E6CD0192BEE0AD00080B3FB /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6CD0162BEE0AD00080B3FB /* HomeTableViewCell.swift */; };
 		1E6CD01C2BEE0AED0080B3FB /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E6CD01B2BEE0AED0080B3FB /* HomeCollectionViewCell.xib */; };
 		1E6CD01D2BEE0AED0080B3FB /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6CD01A2BEE0AED0080B3FB /* HomeCollectionViewCell.swift */; };
+		1E83D5D52C8AD14300D2AC3C /* Action in Frameworks */ = {isa = PBXBuildFile; productRef = 1E83D5D42C8AD14300D2AC3C /* Action */; };
+		1E83D5D72C8AD15600D2AC3C /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 1E83D5D62C8AD15600D2AC3C /* RxBlocking */; };
+		1E83D5D92C8AD15600D2AC3C /* RxBlocking-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 1E83D5D82C8AD15600D2AC3C /* RxBlocking-Dynamic */; };
+		1E83D5DB2C8AD15600D2AC3C /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 1E83D5DA2C8AD15600D2AC3C /* RxCocoa */; };
+		1E83D5DD2C8AD15600D2AC3C /* RxCocoa-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 1E83D5DC2C8AD15600D2AC3C /* RxCocoa-Dynamic */; };
+		1E83D5DF2C8AD15600D2AC3C /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 1E83D5DE2C8AD15600D2AC3C /* RxRelay */; };
 		1EC0E5312AB2A968003DA972 /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC0E52E2AB2A967003DA972 /* DesignableTextField.swift */; };
 		1EC0E5322AB2A968003DA972 /* DesignableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC0E52F2AB2A968003DA972 /* DesignableLabel.swift */; };
 		1EC0E5332AB2A968003DA972 /* DesignableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC0E5302AB2A968003DA972 /* DesignableImageView.swift */; };
@@ -37,7 +43,6 @@
 		40BA84142C1D09E200F52408 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BA84132C1D09E200F52408 /* Calculator.swift */; };
 		40D3B0132A56B2CB00E9A002 /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D3B0122A56B2CB00E9A002 /* NSObjectExtension.swift */; };
 		40D3B0162A56B3E400E9A002 /* ViewControllerInjectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D3B0152A56B3E400E9A002 /* ViewControllerInjectable.swift */; };
-		844A2A7CC692AB7AE5144D68 /* Pods_Xib_Playground.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CD0A8EB52597155F7D85EC8 /* Pods_Xib_Playground.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,7 +68,7 @@
 		1EC5A8452BA69465001455DC /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
 		1EC5A8472BA6958F001455DC /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
 		1EF7E62F2ADE49ED0032015B /* PressableMaterialButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressableMaterialButton.swift; sourceTree = "<group>"; };
-		4011E8BE2A4D9B6F003F06BF /* Xib_Playground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Xib_Playground.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4011E8BE2A4D9B6F003F06BF /* Xib_Playground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Xib_Playground.app; path = "/Users/masayanakakuki/MyLocalProject/Xcode/Personal/Xib_Playground/build/Debug-iphoneos/Xib_Playground.app"; sourceTree = "<absolute>"; };
 		4011E8C12A4D9B6F003F06BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4011E8C32A4D9B6F003F06BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4011E8CA2A4D9B70003F06BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -79,14 +84,11 @@
 		4011E8EB2A4D9D8D003F06BF /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		4011E8F12A4D9E05003F06BF /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		4011E8F32A4D9ED9003F06BF /* Quicksand-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-VariableFont_wght.ttf"; sourceTree = "<group>"; };
-		40BA840A2C1D098A00F52408 /* Xib_PlaygroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Xib_PlaygroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		40BA840A2C1D098A00F52408 /* Xib_PlaygroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Xib_PlaygroundTests.xctest; path = "/Users/masayanakakuki/MyLocalProject/Xcode/Personal/Xib_Playground/build/Debug-iphoneos/Xib_Playground.app/PlugIns/Xib_PlaygroundTests.xctest"; sourceTree = "<absolute>"; };
 		40BA840C2C1D098A00F52408 /* CalculatorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorTest.swift; sourceTree = "<group>"; };
 		40BA84132C1D09E200F52408 /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 		40D3B0122A56B2CB00E9A002 /* NSObjectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
 		40D3B0152A56B3E400E9A002 /* ViewControllerInjectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerInjectable.swift; sourceTree = "<group>"; };
-		6CD0A8EB52597155F7D85EC8 /* Pods_Xib_Playground.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Xib_Playground.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8FD51EC4ED984FB4DC036D16 /* Pods-Xib_Playground.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Xib_Playground.release.xcconfig"; path = "Target Support Files/Pods-Xib_Playground/Pods-Xib_Playground.release.xcconfig"; sourceTree = "<group>"; };
-		EB0B3FD753A1B13C5E383329 /* Pods-Xib_Playground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Xib_Playground.debug.xcconfig"; path = "Target Support Files/Pods-Xib_Playground/Pods-Xib_Playground.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +96,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				844A2A7CC692AB7AE5144D68 /* Pods_Xib_Playground.framework in Frameworks */,
+				1E83D5DF2C8AD15600D2AC3C /* RxRelay in Frameworks */,
+				1E83D5D92C8AD15600D2AC3C /* RxBlocking-Dynamic in Frameworks */,
+				1E83D5DD2C8AD15600D2AC3C /* RxCocoa-Dynamic in Frameworks */,
+				1E83D5D52C8AD14300D2AC3C /* Action in Frameworks */,
+				1E83D5DB2C8AD15600D2AC3C /* RxCocoa in Frameworks */,
+				1E83D5D72C8AD15600D2AC3C /* RxBlocking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,15 +115,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1A300EBE5DE20C68DDB3A5A5 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				EB0B3FD753A1B13C5E383329 /* Pods-Xib_Playground.debug.xcconfig */,
-				8FD51EC4ED984FB4DC036D16 /* Pods-Xib_Playground.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		1E3E3D4F2A67D6D500DB681F /* DesignableComponents */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,19 +151,7 @@
 			children = (
 				4011E8C02A4D9B6F003F06BF /* Xib_Playground */,
 				40BA840B2C1D098A00F52408 /* Xib_PlaygroundTests */,
-				4011E8BF2A4D9B6F003F06BF /* Products */,
-				1A300EBE5DE20C68DDB3A5A5 /* Pods */,
-				B49943C8182FF3B44B6BC674 /* Frameworks */,
 			);
-			sourceTree = "<group>";
-		};
-		4011E8BF2A4D9B6F003F06BF /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				4011E8BE2A4D9B6F003F06BF /* Xib_Playground.app */,
-				40BA840A2C1D098A00F52408 /* Xib_PlaygroundTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		4011E8C02A4D9B6F003F06BF /* Xib_Playground */ = {
@@ -286,14 +272,6 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
-		B49943C8182FF3B44B6BC674 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				6CD0A8EB52597155F7D85EC8 /* Pods_Xib_Playground.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -301,11 +279,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4011E8D22A4D9B70003F06BF /* Build configuration list for PBXNativeTarget "Xib_Playground" */;
 			buildPhases = (
-				7075593D3915AAFC8AC17FD2 /* [CP] Check Pods Manifest.lock */,
 				4011E8BA2A4D9B6F003F06BF /* Sources */,
 				4011E8BB2A4D9B6F003F06BF /* Frameworks */,
 				4011E8BC2A4D9B6F003F06BF /* Resources */,
-				4CA0D6758D655D1A05F9E9B0 /* [CP] Embed Pods Frameworks */,
 				4011E8F52A4DA04B003F06BF /* SwiftLint */,
 			);
 			buildRules = (
@@ -313,6 +289,14 @@
 			dependencies = (
 			);
 			name = Xib_Playground;
+			packageProductDependencies = (
+				1E83D5D42C8AD14300D2AC3C /* Action */,
+				1E83D5D62C8AD15600D2AC3C /* RxBlocking */,
+				1E83D5D82C8AD15600D2AC3C /* RxBlocking-Dynamic */,
+				1E83D5DA2C8AD15600D2AC3C /* RxCocoa */,
+				1E83D5DC2C8AD15600D2AC3C /* RxCocoa-Dynamic */,
+				1E83D5DE2C8AD15600D2AC3C /* RxRelay */,
+			);
 			productName = Xib_Playground;
 			productReference = 4011E8BE2A4D9B6F003F06BF /* Xib_Playground.app */;
 			productType = "com.apple.product-type.application";
@@ -363,7 +347,12 @@
 				Base,
 			);
 			mainGroup = 4011E8B52A4D9B6F003F06BF;
-			productRefGroup = 4011E8BF2A4D9B6F003F06BF /* Products */;
+			packageReferences = (
+				1E83D5D12C8AD05E00D2AC3C /* XCRemoteSwiftPackageReference "RxSwift" */,
+				1E83D5D22C8AD07C00D2AC3C /* XCRemoteSwiftPackageReference "SwiftGen" */,
+				1E83D5D32C8AD08900D2AC3C /* XCRemoteSwiftPackageReference "Action" */,
+			);
+			productRefGroup = 4011E8B52A4D9B6F003F06BF;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -417,45 +406,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint >/dev/null; then\n  swiftlint autocorrect --format # 自動修正の有効化\n  swiftlint\nelse\n  echo \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		4CA0D6758D655D1A05F9E9B0 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Xib_Playground/Pods-Xib_Playground-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Xib_Playground/Pods-Xib_Playground-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Xib_Playground/Pods-Xib_Playground-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7075593D3915AAFC8AC17FD2 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Xib_Playground-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -635,7 +585,6 @@
 		};
 		4011E8D32A4D9B70003F06BF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EB0B3FD753A1B13C5E383329 /* Pods-Xib_Playground.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -672,7 +621,6 @@
 		};
 		4011E8D42A4D9B70003F06BF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8FD51EC4ED984FB4DC036D16 /* Pods-Xib_Playground.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -793,6 +741,61 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1E83D5D12C8AD05E00D2AC3C /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.7.1;
+			};
+		};
+		1E83D5D22C8AD07C00D2AC3C /* XCRemoteSwiftPackageReference "SwiftGen" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftGen/SwiftGen";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.6.3;
+			};
+		};
+		1E83D5D32C8AD08900D2AC3C /* XCRemoteSwiftPackageReference "Action" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/Action";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1E83D5D42C8AD14300D2AC3C /* Action */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1E83D5D32C8AD08900D2AC3C /* XCRemoteSwiftPackageReference "Action" */;
+			productName = Action;
+		};
+		1E83D5D62C8AD15600D2AC3C /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RxBlocking;
+		};
+		1E83D5D82C8AD15600D2AC3C /* RxBlocking-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = "RxBlocking-Dynamic";
+		};
+		1E83D5DA2C8AD15600D2AC3C /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RxCocoa;
+		};
+		1E83D5DC2C8AD15600D2AC3C /* RxCocoa-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = "RxCocoa-Dynamic";
+		};
+		1E83D5DE2C8AD15600D2AC3C /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RxRelay;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4011E8B62A4D9B6F003F06BF /* Project object */;
 }
