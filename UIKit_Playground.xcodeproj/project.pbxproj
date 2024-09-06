@@ -62,13 +62,13 @@
 		1E6CD0172BEE0AD00080B3FB /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 		1E6CD01A2BEE0AED0080B3FB /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		1E6CD01B2BEE0AED0080B3FB /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
-		1E83D5E02C8AD2AA00D2AC3C /* UIKit_Playground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = UIKit_Playground.app; path = "/Users/masayanakakuki/MyLocalProject/Xcode/Personal/UIKit_Playground/build/Debug-iphoneos/UIKit_Playground.app"; sourceTree = "<absolute>"; };
-		1E83D5E12C8AD2AA00D2AC3C /* UIKit_PlaygroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = UIKit_PlaygroundTests.xctest; path = "/Users/masayanakakuki/MyLocalProject/Xcode/Personal/UIKit_Playground/build/Debug-iphoneos/UIKit_Playground.app/PlugIns/UIKit_PlaygroundTests.xctest"; sourceTree = "<absolute>"; };
 		1EC0E52E2AB2A967003DA972 /* DesignableTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableTextField.swift; sourceTree = "<group>"; };
 		1EC0E52F2AB2A968003DA972 /* DesignableLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableLabel.swift; sourceTree = "<group>"; };
 		1EC0E5302AB2A968003DA972 /* DesignableImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableImageView.swift; sourceTree = "<group>"; };
 		1EC5A8452BA69465001455DC /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
 		1EC5A8472BA6958F001455DC /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
+		1EE5E4DE2C8AD3E300422E13 /* UIKit_Playground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKit_Playground.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EE5E4DF2C8AD3E300422E13 /* UIKit_PlaygroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = UIKit_PlaygroundTests.xctest; path = "/Users/masayanakakuki/MyLocalProject/Xcode/Personal/UIKit_Playground/build/Debug-iphoneos/UIKit_Playground.app/PlugIns/UIKit_PlaygroundTests.xctest"; sourceTree = "<absolute>"; };
 		1EF7E62F2ADE49ED0032015B /* PressableMaterialButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressableMaterialButton.swift; sourceTree = "<group>"; };
 		4011E8C12A4D9B6F003F06BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4011E8C32A4D9B6F003F06BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -151,6 +151,7 @@
 			children = (
 				4011E8C02A4D9B6F003F06BF /* UIKit_Playground */,
 				40BA840B2C1D098A00F52408 /* UIKit_PlaygroundTests */,
+				1EE5E4DE2C8AD3E300422E13 /* UIKit_Playground.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -298,7 +299,7 @@
 				1E83D5DE2C8AD15600D2AC3C /* RxRelay */,
 			);
 			productName = Xib_Playground;
-			productReference = 1E83D5E02C8AD2AA00D2AC3C /* UIKit_Playground.app */;
+			productReference = 1EE5E4DE2C8AD3E300422E13 /* UIKit_Playground.app */;
 			productType = "com.apple.product-type.application";
 		};
 		40BA84092C1D098A00F52408 /* UIKit_PlaygroundTests */ = {
@@ -316,7 +317,7 @@
 			);
 			name = UIKit_PlaygroundTests;
 			productName = Xib_PlaygroundTests;
-			productReference = 1E83D5E12C8AD2AA00D2AC3C /* UIKit_PlaygroundTests.xctest */;
+			productReference = 1EE5E4DF2C8AD3E300422E13 /* UIKit_PlaygroundTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
