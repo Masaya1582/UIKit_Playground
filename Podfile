@@ -11,6 +11,5 @@ target 'Xib_Playground' do
     pod 'RxSwift'
     pod 'RxCocoa'
     pod 'RxDataSources', '~> 5.0'
-    pod 'SwiftFormat/CLI', '~> 0.54'
   
 end
