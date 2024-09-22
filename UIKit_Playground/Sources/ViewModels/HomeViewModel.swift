@@ -5,12 +5,11 @@
 //  Created by MasayaNakakuki on 2023/06/29.
 //
 
-import Action
 import RxCocoa
 import RxSwift
 
 protocol HomeViewModelInputs: AnyObject {
-    var switchAccrodion: PublishRelay<Void> { get }
+    var switchAccordion: PublishRelay<Void> { get }
 }
 
 protocol HomeViewModelOutputs: AnyObject {
@@ -28,7 +27,7 @@ final class HomeViewModel: HomeViewModelType, HomeViewModelInputs, HomeViewModel
     var outputs: HomeViewModelOutputs { return self }
 
     // MARK: - Input Sources
-    let switchAccrodion = PublishRelay<Void>()
+    let switchAccordion = PublishRelay<Void>()
     // MARK: - Output Sources
     let isAccordionViewHidden: Driver<Bool>
 
@@ -39,7 +38,7 @@ final class HomeViewModel: HomeViewModelType, HomeViewModelInputs, HomeViewModel
     // MARK: - Initialize
     init() {
         self.isAccordionViewHidden = _isAccordionViewHidden.asDriver(onErrorDriveWith: .empty())
-        switchAccrodion.asObservable()
+        switchAccordion.asObservable()
             .withLatestFrom(isAccordionViewHidden)
             .map { !$0 }
             .bind(to: _isAccordionViewHidden)
