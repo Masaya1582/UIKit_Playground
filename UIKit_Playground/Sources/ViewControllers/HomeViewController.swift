@@ -10,13 +10,27 @@ import RxSwift
 import UIKit
 
 final class HomeViewController: UIViewController {
+    // MARK: - Dependency
+    typealias Dependency = HomeViewModelType
+
     // MARK: - Properties
     @IBOutlet private weak var accrodionButton: UIButton!
     @IBOutlet private weak var accrodionView: UIView!
     @IBOutlet private weak var accordionViewHeightConstraint: NSLayoutConstraint!
 
-    private lazy var viewModel = HomeViewModel()
+    private lazy var viewModel: HomeViewModelType = { fatalError("Use (dependency: ) at initialize controller") }()
     private let disposeBag = DisposeBag()
+
+    // MARK: - Initialize
+    init(dependency: Dependency) {
+        super.init(nibName: Self.className, bundle: Self.bundle)
+        viewModel = dependency
+    }
+
+    @available(*, unavailable)
+    required init?(coder _: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 
     // MARK: - View Life Cycle
     override func viewDidLoad() {
@@ -27,13 +41,11 @@ final class HomeViewController: UIViewController {
 
 // MARK: - Bind
 private extension HomeViewController {
-    func bind(to: HomeViewModelType) {
-        // アコーディオンタップ
+    func bind(to: Dependency) {
         accrodionButton.rx.tap.asSignal()
-            .emit(to: viewModel.inputs.switchAccordion)
+            .emit(to: viewModel.inputs.switchAccrodion)
             .disposed(by: disposeBag)
 
-        // isHidden制御
         viewModel.outputs.isAccordionViewHidden
             .drive(onNext: { [weak self] isAccordionViewHidden in
                 guard let self = self else { return }
@@ -53,3 +65,6 @@ private extension HomeViewController {
             .disposed(by: disposeBag)
     }
 }
+
+// MARK: - ViewControllerInjectable
+extension HomeViewController: ViewControllerInjectable {}
