@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="UIKit_Playground" customModuleProvider="target">
             <connections>
+                <outlet property="accordionViewHeightConstraint" destination="3d0-MX-N32" id="pCG-s0-nmN"/>
                 <outlet property="accrodionButton" destination="yW1-pn-rsi" id="h9B-AR-FAX"/>
                 <outlet property="accrodionView" destination="CrA-53-gUh" id="Ajs-HV-xVm"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -65,17 +66,20 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CrA-53-gUh">
                             <rect key="frame" x="0.0" y="48" width="345" height="160"/>
                             <subviews>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_burger" translatesAutoresizingMaskIntoConstraints="NO" id="KnW-cS-2ke">
-                                    <rect key="frame" x="0.0" y="0.0" width="345" height="160"/>
-                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ukJ-fp-xg5">
+                                    <rect key="frame" x="28.333333333333343" y="46.666666666666686" width="288.33333333333326" height="67"/>
+                                    <string key="text">Hey Guys!
+We have a gift for you!</string>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                    <color key="textColor" name="alert_red"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
                             </subviews>
                             <color key="backgroundColor" name="gray8"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="160" id="3d0-MX-N32"/>
-                                <constraint firstItem="KnW-cS-2ke" firstAttribute="top" secondItem="CrA-53-gUh" secondAttribute="top" id="DQa-pt-Y3t"/>
-                                <constraint firstAttribute="bottom" secondItem="KnW-cS-2ke" secondAttribute="bottom" id="EWA-ac-keB"/>
-                                <constraint firstAttribute="trailing" secondItem="KnW-cS-2ke" secondAttribute="trailing" id="tiJ-gc-e3H"/>
-                                <constraint firstItem="KnW-cS-2ke" firstAttribute="leading" secondItem="CrA-53-gUh" secondAttribute="leading" id="vTL-LM-0Gs"/>
+                                <constraint firstItem="ukJ-fp-xg5" firstAttribute="centerY" secondItem="CrA-53-gUh" secondAttribute="centerY" id="NBT-ks-hdj"/>
+                                <constraint firstItem="ukJ-fp-xg5" firstAttribute="centerX" secondItem="CrA-53-gUh" secondAttribute="centerX" id="TRh-FW-8YV"/>
                             </constraints>
                         </view>
                     </subviews>
@@ -92,8 +96,10 @@
         </view>
     </objects>
     <resources>
-        <image name="img_burger" width="285" height="177"/>
         <image name="plus" catalog="system" width="128" height="113"/>
+        <namedColor name="alert_red">
+            <color red="0.82700002193450928" green="0.16500000655651093" blue="0.16500000655651093" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="gray1">
             <color red="0.13699999451637268" green="0.13699999451637268" blue="0.13699999451637268" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
