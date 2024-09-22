@@ -9,10 +9,12 @@ import Action
 import RxCocoa
 import RxSwift
 
-protocol HomeViewModelInputs: AnyObject {}
+protocol HomeViewModelInputs: AnyObject {
+    var switchAccrodion: PublishRelay<Void> { get }
+}
 
 protocol HomeViewModelOutputs: AnyObject {
-    // var items: Driver<[HomeViewModel.ListItem]> { get }
+    var isAccordionViewHidden: Driver<Bool> { get }
 }
 
 protocol HomeViewModelType: AnyObject {
@@ -22,32 +24,25 @@ protocol HomeViewModelType: AnyObject {
 
 final class HomeViewModel: HomeViewModelType, HomeViewModelInputs, HomeViewModelOutputs {
     // MARK: - Properties
-
     var inputs: HomeViewModelInputs { return self }
     var outputs: HomeViewModelOutputs { return self }
 
     // MARK: - Input Sources
-
+    let switchAccrodion = PublishRelay<Void>()
     // MARK: - Output Sources
-
-    // let items: Driver<[ListItem]>
+    let isAccordionViewHidden: Driver<Bool>
 
     // MARK: - Properties
-
-    // private let loadAction: Action<Void, DefaultModel>
+    private let _isAccordionViewHidden = BehaviorRelay<Bool>(value: true)
     private let disposeBag = DisposeBag()
 
     // MARK: - Initialize
-
-    init() {}
+    init() {
+        self.isAccordionViewHidden = _isAccordionViewHidden.asDriver(onErrorDriveWith: .empty())
+        switchAccrodion.asObservable()
+            .withLatestFrom(isAccordionViewHidden)
+            .map { !$0 }
+            .bind(to: _isAccordionViewHidden)
+            .disposed(by: disposeBag)
+    }
 }
-
-// MARK: - Item
-
-// extension HomeViewModel {
-//    enum ListItem {
-//        case header
-//        case shop(Content)
-//        case footer
-//    }
-// }
