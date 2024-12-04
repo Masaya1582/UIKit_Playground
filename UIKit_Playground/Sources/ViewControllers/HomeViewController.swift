@@ -46,8 +46,11 @@ final class HomeViewController: UIViewController {
         mapView = MKMapView(frame: view.bounds)
         mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         view.addSubview(mapView)
-        let initialLocation = CLLocation(latitude: 35.6895, longitude: 139.6917)
-        setMapRegion(location: initialLocation)
+        let pin = MKPointAnnotation()
+        pin.coordinate = CLLocationCoordinate2D(latitude: 35.6812, longitude: 139.7671)
+        pin.title = "Tokyo"
+        pin.subtitle = "日本の主要な鉄道駅"
+        mapView.addAnnotation(pin)
         bind(to: viewModel)
     }
 
