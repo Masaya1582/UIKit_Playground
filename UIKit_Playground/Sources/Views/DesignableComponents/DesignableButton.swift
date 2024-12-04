@@ -10,7 +10,6 @@ import UIKit
 @IBDesignable
 open class DesignableButton: UIButton {
     // MARK: - Properties
-
     @IBInspectable open var borderColor: UIColor = .lightGray {
         didSet { layer.borderColor = borderColor.cgColor }
     }

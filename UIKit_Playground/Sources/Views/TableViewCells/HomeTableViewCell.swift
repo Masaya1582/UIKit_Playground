@@ -15,19 +15,16 @@ protocol HomeTableViewCellDelegate: AnyObject {
 
 final class HomeTableViewCell: UITableViewCell {
     // MARK: - Properties
-
     weak var delegate: HomeTableViewCellDelegate?
     private var disposeBag = DisposeBag()
 
     // MARK: - Initialize
-
     override func prepareForReuse() {
         super.prepareForReuse()
         disposeBag = DisposeBag()
     }
 
     // MARK: - Setup
-
     func configure() {
         bind()
     }

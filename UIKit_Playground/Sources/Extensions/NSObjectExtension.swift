@@ -8,7 +8,6 @@
 import Foundation
 
 // MARK: - Class Name
-
 extension NSObject {
     static var className: String {
         return NSStringFromClass(self).components(separatedBy: ".").last!

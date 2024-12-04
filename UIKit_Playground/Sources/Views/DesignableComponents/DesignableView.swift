@@ -10,7 +10,6 @@ import UIKit
 @IBDesignable
 open class DesignableView: UIView {
     // MARK: - Properties
-
     @IBInspectable open var borderColor: UIColor = .lightGray {
         didSet { layer.borderColor = borderColor.cgColor }
     }

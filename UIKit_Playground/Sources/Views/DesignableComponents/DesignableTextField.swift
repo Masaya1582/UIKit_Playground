@@ -11,7 +11,6 @@ import UIKit
 @IBDesignable
 class DesignableTextField: UITextField {
     // MARK: - Properties
-
     @IBInspectable var borderColor: UIColor = .clear {
         didSet { layer.borderColor = borderColor.cgColor }
     }

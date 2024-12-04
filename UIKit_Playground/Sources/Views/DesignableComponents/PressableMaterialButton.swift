@@ -21,7 +21,6 @@ final class PressAnimationButton: UIButton {
     }
 
     // MARK: - Configure UI
-
     private func configureUI() {
         layer.cornerRadius = frame.height / 2
         originalBackgroundColor = backgroundColor

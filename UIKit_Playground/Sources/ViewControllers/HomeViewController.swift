@@ -11,11 +11,9 @@ import UIKit
 
 final class HomeViewController: UIViewController {
     // MARK: - Dependency
-
     typealias Dependency = HomeViewModelType
 
     // MARK: - Properties
-
 //    @IBOutlet private weak var tableView: UITableView! {
 //        didSet {
 //            tableView.registerCell(HomeTableViewCell.self)
@@ -30,7 +28,6 @@ final class HomeViewController: UIViewController {
     private let disposeBag = DisposeBag()
 
     // MARK: - Initialize
-
     init(dependency: Dependency) {
         super.init(nibName: Self.className, bundle: Self.bundle)
         viewModel = dependency
@@ -42,7 +39,6 @@ final class HomeViewController: UIViewController {
     }
 
     // MARK: - View Life Cycle
-
     override func viewDidLoad() {
         super.viewDidLoad()
         print("Hello Japan")
@@ -51,7 +47,6 @@ final class HomeViewController: UIViewController {
 }
 
 // MARK: - Bind
-
 private extension HomeViewController {
     func bind(to _: Dependency) {
 //        <#Button#>.rx.tap.asSignal()
@@ -107,5 +102,4 @@ private extension HomeViewController {
 }
 
 // MARK: - ViewControllerInjectable
-
 extension HomeViewController: ViewControllerInjectable {}
