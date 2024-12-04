@@ -8,8 +8,9 @@
 import RxCocoa
 import RxSwift
 import UIKit
+import MapKit
 
-final class HomeViewController: UIViewController {
+final class HomeViewController: UIViewController, MKMapViewDelegate {
     // MARK: - Dependency
     typealias Dependency = HomeViewModelType
 
@@ -24,6 +25,7 @@ final class HomeViewController: UIViewController {
 //            collectionView.registerCell(HomeCollectionViewCell.self)
 //        }
 //    }
+    private var mapView: MKMapView!
     private lazy var viewModel: HomeViewModelType = { fatalError("Use (dependency: ) at initialize controller") }()
     private let disposeBag = DisposeBag()
 
@@ -41,8 +43,39 @@ final class HomeViewController: UIViewController {
     // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("Hello Japan")
+        mapView = MKMapView(frame: view.bounds)
+        mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        mapView.delegate = self
+        view.addSubview(mapView)
+        let pin = MKPointAnnotation()
+        pin.coordinate = CLLocationCoordinate2D(latitude: 35.6812, longitude: 139.7671)
+        pin.title = "カスタムピン"
+        mapView.addAnnotation(pin)
         bind(to: viewModel)
+    }
+
+    private func setMapRegion(location: CLLocation, radius: CLLocationDistance = 1000) {
+        let coordinateRegion = MKCoordinateRegion(
+            center: location.coordinate,
+            latitudinalMeters: radius,
+            longitudinalMeters: radius
+        )
+        mapView.setRegion(coordinateRegion, animated: true)
+    }
+
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        let identifier = "customPin"
+        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
+
+        if annotationView == nil {
+            annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+            annotationView?.canShowCallout = true
+            annotationView?.image = UIImage(systemName: "star.fill") // SF Symbolsを利用
+        } else {
+            annotationView?.annotation = annotation
+        }
+
+        return annotationView
     }
 }
 
