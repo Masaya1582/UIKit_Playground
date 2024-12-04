@@ -8,6 +8,7 @@
 import RxCocoa
 import RxSwift
 import UIKit
+import MapKit
 
 final class HomeViewController: UIViewController {
     // MARK: - Dependency
@@ -24,6 +25,7 @@ final class HomeViewController: UIViewController {
 //            collectionView.registerCell(HomeCollectionViewCell.self)
 //        }
 //    }
+    private var mapView: MKMapView!
     private lazy var viewModel: HomeViewModelType = { fatalError("Use (dependency: ) at initialize controller") }()
     private let disposeBag = DisposeBag()
 
@@ -41,8 +43,21 @@ final class HomeViewController: UIViewController {
     // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("Hello Japan")
+        mapView = MKMapView(frame: view.bounds)
+        mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        view.addSubview(mapView)
+        let initialLocation = CLLocation(latitude: 35.6895, longitude: 139.6917)
+        setMapRegion(location: initialLocation)
         bind(to: viewModel)
+    }
+
+    private func setMapRegion(location: CLLocation, radius: CLLocationDistance = 1000) {
+        let coordinateRegion = MKCoordinateRegion(
+            center: location.coordinate,
+            latitudinalMeters: radius,
+            longitudinalMeters: radius
+        )
+        mapView.setRegion(coordinateRegion, animated: true)
     }
 }
 
