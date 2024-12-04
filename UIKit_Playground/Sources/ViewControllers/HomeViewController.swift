@@ -8,8 +8,9 @@
 import RxCocoa
 import RxSwift
 import UIKit
+import WebKit
 
-final class HomeViewController: UIViewController {
+final class HomeViewController: UIViewController, WKUIDelegate {
     // MARK: - Dependency
 
     typealias Dependency = HomeViewModelType
@@ -26,6 +27,7 @@ final class HomeViewController: UIViewController {
 //            collectionView.registerCell(HomeCollectionViewCell.self)
 //        }
 //    }
+    private var webView: WKWebView!
     private lazy var viewModel: HomeViewModelType = { fatalError("Use (dependency: ) at initialize controller") }()
     private let disposeBag = DisposeBag()
 
@@ -43,10 +45,18 @@ final class HomeViewController: UIViewController {
 
     // MARK: - View Life Cycle
 
+    override func loadView() {
+        let webConfiguration = WKWebViewConfiguration()
+        webView = WKWebView(frame: .zero, configuration: webConfiguration)
+        webView.uiDelegate = self
+        view = webView
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("Hello Japan")
-        bind(to: viewModel)
+        let myURL = URL(string:"https://www.apple.com")
+        let myRequest = URLRequest(url: myURL!)
+        webView.load(myRequest)
     }
 }
 
