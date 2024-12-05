@@ -38,6 +38,7 @@
 		4011E8EC2A4D9D8D003F06BF /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4011E8EB2A4D9D8D003F06BF /* HomeViewModel.swift */; };
 		4011E8F22A4D9E05003F06BF /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4011E8F12A4D9E05003F06BF /* HomeModel.swift */; };
 		4011E8F42A4D9ED9003F06BF /* Quicksand-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4011E8F32A4D9ED9003F06BF /* Quicksand-VariableFont_wght.ttf */; };
+		40A481092D0130040015C565 /* PINRemoteImage in Frameworks */ = {isa = PBXBuildFile; productRef = 40A481082D0130040015C565 /* PINRemoteImage */; };
 		40BA840D2C1D098A00F52408 /* CalculatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BA840C2C1D098A00F52408 /* CalculatorTest.swift */; };
 		40BA84142C1D09E200F52408 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BA84132C1D09E200F52408 /* Calculator.swift */; };
 		40D3B0132A56B2CB00E9A002 /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D3B0122A56B2CB00E9A002 /* NSObjectExtension.swift */; };
@@ -99,6 +100,7 @@
 				1E83D5D52C8AD14300D2AC3C /* Action in Frameworks */,
 				1EE5E4E22C8AD93200422E13 /* SwiftFormat in Frameworks */,
 				1E83D5DB2C8AD15600D2AC3C /* RxCocoa in Frameworks */,
+				40A481092D0130040015C565 /* PINRemoteImage in Frameworks */,
 				1E83D5D72C8AD15600D2AC3C /* RxBlocking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,6 +297,7 @@
 				1E83D5DA2C8AD15600D2AC3C /* RxCocoa */,
 				1E83D5DE2C8AD15600D2AC3C /* RxRelay */,
 				1EE5E4E12C8AD93200422E13 /* SwiftFormat */,
+				40A481082D0130040015C565 /* PINRemoteImage */,
 			);
 			productName = Xib_Playground;
 			productReference = 1EE5E4DE2C8AD3E300422E13 /* UIKit_Playground.app */;
@@ -351,6 +354,7 @@
 				1E83D5D22C8AD07C00D2AC3C /* XCRemoteSwiftPackageReference "SwiftGen" */,
 				1E83D5D32C8AD08900D2AC3C /* XCRemoteSwiftPackageReference "Action" */,
 				1EE5E4E02C8AD93200422E13 /* XCRemoteSwiftPackageReference "SwiftFormat" */,
+				40A481072D0130040015C565 /* XCRemoteSwiftPackageReference "PINRemoteImage" */,
 			);
 			productRefGroup = 4011E8B52A4D9B6F003F06BF;
 			projectDirPath = "";
@@ -775,6 +779,14 @@
 				minimumVersion = 0.54.3;
 			};
 		};
+		40A481072D0130040015C565 /* XCRemoteSwiftPackageReference "PINRemoteImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pinterest/PINRemoteImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.4;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -799,6 +811,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1EE5E4E02C8AD93200422E13 /* XCRemoteSwiftPackageReference "SwiftFormat" */;
 			productName = SwiftFormat;
+		};
+		40A481082D0130040015C565 /* PINRemoteImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 40A481072D0130040015C565 /* XCRemoteSwiftPackageReference "PINRemoteImage" */;
+			productName = PINRemoteImage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
