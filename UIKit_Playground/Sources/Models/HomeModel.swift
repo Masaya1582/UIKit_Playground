@@ -30,3 +30,9 @@ public enum PokemonType: String {
     case grass = "Grass"
     case normal = "Normal"
 }
+
+struct Pokemon: Codable {
+    var name: String
+    var type: String
+    var level: Int
+}
