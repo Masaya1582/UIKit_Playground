@@ -64,7 +64,6 @@ private extension HomeViewController {
             tableView.rx.didEndDragging
                 .map { [weak self] _ in self?.tableView.isDragging ?? false }
                 .distinctUntilChanged(),
-            
             tableView.rx.contentOffset
                 .map { [weak self] _ in self?.tableView.isDragging ?? false }
                 .distinctUntilChanged()
