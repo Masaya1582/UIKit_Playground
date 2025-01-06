@@ -42,7 +42,6 @@ final class HomeViewController: UIViewController {
     // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("Hello Japan")
         bind(to: viewModel)
     }
 }
