@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseInAppMessaging
 
 @main
 final class AppDelegate: UIResponder, UIApplicationDelegate {
