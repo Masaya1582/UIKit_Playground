@@ -7,10 +7,20 @@
 
 import UIKit
 import FirebaseInAppMessaging
+import Firebase
 
 @main
 final class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_: UIApplication, didFinishLaunchingWithOptions _: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        FirebaseApp.configure()
+        InAppMessaging.inAppMessaging().messageDisplayComponent = InAppMessagingCustomComponent()
+        Installations.installations().installationID { id, error in
+            if let error = error {
+                print("Error retrieving installation ID: \(error.localizedDescription)")
+            } else if let id = id {
+                print("Firebase Installation ID: \(id)")
+            }
+        }
         return true
     }
 

@@ -23,6 +23,11 @@
 		1EA913A22D2B63AD00863507 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 1EA913A12D2B63AD00863507 /* FirebaseAppCheck */; };
 		1EA913A42D2B63AD00863507 /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 1EA913A32D2B63AD00863507 /* FirebaseAppDistribution-Beta */; };
 		1EBB91052D2B6475006BB918 /* FirebaseInAppMessaging-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 1EBB91042D2B6475006BB918 /* FirebaseInAppMessaging-Beta */; };
+		1EBB91192D2B6530006BB918 /* InAppMessagingCustomComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBB91182D2B6530006BB918 /* InAppMessagingCustomComponent.swift */; };
+		1EBB911B2D2B6564006BB918 /* InAppMessagingModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBB911A2D2B6564006BB918 /* InAppMessagingModal.swift */; };
+		1EBB911E2D2B65D0006BB918 /* InAppMessagingModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBB911C2D2B65D0006BB918 /* InAppMessagingModalViewController.swift */; };
+		1EBB911F2D2B65D0006BB918 /* InAppMessagingModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1EBB911D2D2B65D0006BB918 /* InAppMessagingModalViewController.xib */; };
+		1EBB91212D2B69B3006BB918 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1EBB91202D2B69B3006BB918 /* GoogleService-Info.plist */; };
 		1EC0E5312AB2A968003DA972 /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC0E52E2AB2A967003DA972 /* DesignableTextField.swift */; };
 		1EC0E5322AB2A968003DA972 /* DesignableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC0E52F2AB2A968003DA972 /* DesignableLabel.swift */; };
 		1EC0E5332AB2A968003DA972 /* DesignableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC0E5302AB2A968003DA972 /* DesignableImageView.swift */; };
@@ -70,6 +75,11 @@
 		1E6CD01A2BEE0AED0080B3FB /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		1E6CD01B2BEE0AED0080B3FB /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
 		1E7081B92D001D2500063DBF /* UIKit_PlaygroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIKit_PlaygroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EBB91182D2B6530006BB918 /* InAppMessagingCustomComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppMessagingCustomComponent.swift; sourceTree = "<group>"; };
+		1EBB911A2D2B6564006BB918 /* InAppMessagingModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppMessagingModal.swift; sourceTree = "<group>"; };
+		1EBB911C2D2B65D0006BB918 /* InAppMessagingModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppMessagingModalViewController.swift; sourceTree = "<group>"; };
+		1EBB911D2D2B65D0006BB918 /* InAppMessagingModalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InAppMessagingModalViewController.xib; sourceTree = "<group>"; };
+		1EBB91202D2B69B3006BB918 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1EC0E52E2AB2A967003DA972 /* DesignableTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableTextField.swift; sourceTree = "<group>"; };
 		1EC0E52F2AB2A968003DA972 /* DesignableLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableLabel.swift; sourceTree = "<group>"; };
 		1EC0E5302AB2A968003DA972 /* DesignableImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableImageView.swift; sourceTree = "<group>"; };
@@ -208,6 +218,7 @@
 		4011E8DB2A4D9CCD003F06BF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1EBB91202D2B69B3006BB918 /* GoogleService-Info.plist */,
 				4011E8CA2A4D9B70003F06BF /* Assets.xcassets */,
 				4011E8DC2A4D9D20003F06BF /* Colors.xcassets */,
 				4011E8DE2A4D9D31003F06BF /* Localizable.strings */,
@@ -231,6 +242,8 @@
 			children = (
 				4011E8D52A4D9B81003F06BF /* HomeViewController.swift */,
 				4011E8D62A4D9B81003F06BF /* HomeViewController.xib */,
+				1EBB911C2D2B65D0006BB918 /* InAppMessagingModalViewController.swift */,
+				1EBB911D2D2B65D0006BB918 /* InAppMessagingModalViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -249,6 +262,8 @@
 				1E62EE6A2AD7AAEE0031CB1B /* TableViewCells */,
 				1E62EE6B2AD7AAF70031CB1B /* CollectionViewCells */,
 				1E3E3D4F2A67D6D500DB681F /* DesignableComponents */,
+				1EBB91182D2B6530006BB918 /* InAppMessagingCustomComponent.swift */,
+				1EBB911A2D2B6564006BB918 /* InAppMessagingModal.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -399,7 +414,9 @@
 				1E6CD0182BEE0AD00080B3FB /* HomeTableViewCell.xib in Resources */,
 				1E6CD01C2BEE0AED0080B3FB /* HomeCollectionViewCell.xib in Resources */,
 				4011E8DD2A4D9D20003F06BF /* Colors.xcassets in Resources */,
+				1EBB911F2D2B65D0006BB918 /* InAppMessagingModalViewController.xib in Resources */,
 				4011E8CB2A4D9B70003F06BF /* Assets.xcassets in Resources */,
+				1EBB91212D2B69B3006BB918 /* GoogleService-Info.plist in Resources */,
 				4011E8D82A4D9B81003F06BF /* HomeViewController.xib in Resources */,
 				4011E8F42A4D9ED9003F06BF /* Quicksand-VariableFont_wght.ttf in Resources */,
 			);
@@ -452,12 +469,15 @@
 				1E6CD0192BEE0AD00080B3FB /* HomeTableViewCell.swift in Sources */,
 				1E514EDE2AAEDF2400C9CB9A /* DesignableView.swift in Sources */,
 				4011E8C42A4D9B6F003F06BF /* SceneDelegate.swift in Sources */,
+				1EBB91192D2B6530006BB918 /* InAppMessagingCustomComponent.swift in Sources */,
 				4011E8E82A4D9D6E003F06BF /* LocalizableStrings.swift in Sources */,
+				1EBB911E2D2B65D0006BB918 /* InAppMessagingModalViewController.swift in Sources */,
 				1EF7E6302ADE49ED0032015B /* PressableMaterialButton.swift in Sources */,
 				4011E8E62A4D9D67003F06BF /* Assets.swift in Sources */,
 				4011E8EA2A4D9D74003F06BF /* Fonts.swift in Sources */,
 				1EC0E5322AB2A968003DA972 /* DesignableLabel.swift in Sources */,
 				40D3B0162A56B3E400E9A002 /* ViewControllerInjectable.swift in Sources */,
+				1EBB911B2D2B6564006BB918 /* InAppMessagingModal.swift in Sources */,
 				1E6CD01D2BEE0AED0080B3FB /* HomeCollectionViewCell.swift in Sources */,
 				4011E8EC2A4D9D8D003F06BF /* HomeViewModel.swift in Sources */,
 				1EC5A8482BA6958F001455DC /* UICollectionViewExtension.swift in Sources */,
