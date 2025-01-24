@@ -36,6 +36,7 @@
 		1EC0E5332AB2A968003DA972 /* DesignableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC0E5302AB2A968003DA972 /* DesignableImageView.swift */; };
 		1EC5A8462BA69465001455DC /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC5A8452BA69465001455DC /* UITableViewExtension.swift */; };
 		1EC5A8482BA6958F001455DC /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC5A8472BA6958F001455DC /* UICollectionViewExtension.swift */; };
+		1EDDC9252D43169000D4C6D5 /* unicorn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1EDDC9242D43169000D4C6D5 /* unicorn.mp3 */; };
 		1EE5E4E22C8AD93200422E13 /* SwiftFormat in Frameworks */ = {isa = PBXBuildFile; productRef = 1EE5E4E12C8AD93200422E13 /* SwiftFormat */; };
 		1EF7E6302ADE49ED0032015B /* PressableMaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF7E62F2ADE49ED0032015B /* PressableMaterialButton.swift */; };
 		400EE06E2D0D9F1E0005E586 /* RxDataSources in Frameworks */ = {isa = PBXBuildFile; productRef = 400EE06D2D0D9F1E0005E586 /* RxDataSources */; };
@@ -81,6 +82,7 @@
 		1EC0E5302AB2A968003DA972 /* DesignableImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableImageView.swift; sourceTree = "<group>"; };
 		1EC5A8452BA69465001455DC /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
 		1EC5A8472BA6958F001455DC /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
+		1EDDC9242D43169000D4C6D5 /* unicorn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = unicorn.mp3; sourceTree = "<group>"; };
 		1EE5E4DE2C8AD3E300422E13 /* UIKit_Playground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKit_Playground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EF7E62F2ADE49ED0032015B /* PressableMaterialButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressableMaterialButton.swift; sourceTree = "<group>"; };
 		4011E8CA2A4D9B70003F06BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -228,6 +230,7 @@
 				4011E8CA2A4D9B70003F06BF /* Assets.xcassets */,
 				4011E8DC2A4D9D20003F06BF /* Colors.xcassets */,
 				4011E8DE2A4D9D31003F06BF /* Localizable.strings */,
+				1EDDC9242D43169000D4C6D5 /* unicorn.mp3 */,
 				4011E8CC2A4D9B70003F06BF /* LaunchScreen.storyboard */,
 				4011E8CF2A4D9B70003F06BF /* Info.plist */,
 				4011E8E02A4D9D38003F06BF /* Font */,
@@ -425,6 +428,7 @@
 			files = (
 				4011E8DF2A4D9D31003F06BF /* Localizable.strings in Resources */,
 				4011E8CE2A4D9B70003F06BF /* LaunchScreen.storyboard in Resources */,
+				1EDDC9252D43169000D4C6D5 /* unicorn.mp3 in Resources */,
 				1E6CD0182BEE0AD00080B3FB /* HomeTableViewCell.xib in Resources */,
 				1E6CD01C2BEE0AED0080B3FB /* HomeCollectionViewCell.xib in Resources */,
 				4011E8DD2A4D9D20003F06BF /* Colors.xcassets in Resources */,
