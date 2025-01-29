@@ -15,7 +15,7 @@ protocol HomeTableViewCellDelegate: AnyObject {
 
 final class HomeTableViewCell: UITableViewCell {
     // MARK: - Properties
-    @IBOutlet weak var pokemonNameLabel: UILabel!
+    @IBOutlet private weak var pokemonNameLabel: UILabel!
     weak var delegate: HomeTableViewCellDelegate?
     private var disposeBag = DisposeBag()
 

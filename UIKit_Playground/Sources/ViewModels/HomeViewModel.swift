@@ -70,7 +70,7 @@ final class HomeViewModel: HomeViewModelType, HomeViewModelInputs, HomeViewModel
                 }
                 do {
                     let response = try JSONDecoder().decode(PokemonResponse.self, from: data)
-                    let randomPokemons = Array(response.results.shuffled().prefix(10))
+                    let randomPokemons = Array(response.results.shuffled().prefix(30))
                     single(.success(randomPokemons))
                     print("ポケモン: \(randomPokemons)")
                 } catch {
