@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E0107362D4C86E900EE0EDC /* Sharedinstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0107352D4C86E900EE0EDC /* Sharedinstance.swift */; };
 		1E3E3D512A67D6E500DB681F /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3E3D502A67D6E500DB681F /* DesignableButton.swift */; };
 		1E514EDE2AAEDF2400C9CB9A /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E514EDD2AAEDF2400C9CB9A /* DesignableView.swift */; };
 		1E6CD0182BEE0AD00080B3FB /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E6CD0172BEE0AD00080B3FB /* HomeTableViewCell.xib */; };
@@ -70,6 +71,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E0107352D4C86E900EE0EDC /* Sharedinstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sharedinstance.swift; sourceTree = "<group>"; };
 		1E3E3D502A67D6E500DB681F /* DesignableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
 		1E514EDD2AAEDF2400C9CB9A /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 		1E6CD0162BEE0AD00080B3FB /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
@@ -278,6 +280,7 @@
 			children = (
 				4011E8F12A4D9E05003F06BF /* HomeModel.swift */,
 				40BA84132C1D09E200F52408 /* Calculator.swift */,
+				1E0107352D4C86E900EE0EDC /* Sharedinstance.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -490,6 +493,7 @@
 				1EC0E5322AB2A968003DA972 /* DesignableLabel.swift in Sources */,
 				40D3B0162A56B3E400E9A002 /* ViewControllerInjectable.swift in Sources */,
 				1E6CD01D2BEE0AED0080B3FB /* HomeCollectionViewCell.swift in Sources */,
+				1E0107362D4C86E900EE0EDC /* Sharedinstance.swift in Sources */,
 				4011E8EC2A4D9D8D003F06BF /* HomeViewModel.swift in Sources */,
 				1EC5A8482BA6958F001455DC /* UICollectionViewExtension.swift in Sources */,
 				4011E8D72A4D9B81003F06BF /* HomeViewController.swift in Sources */,
